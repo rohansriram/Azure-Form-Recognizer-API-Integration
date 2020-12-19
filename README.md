@@ -1,9 +1,10 @@
 # Azure-Form-Recognizer-API-Integration
 
 ## API DOCUMENTATION
-The Azure Form Recognizer extracts information from forms and images into structured data. The serviceds implemented are: 
+The Azure Form Recognizer extracts information from forms and images into structured data. The services implemented are: 
 *	Analyze Layout
-*	Analyze Receipt
+*	Analyze Receipt\
+Total of 4 endpoints are implemented in this application 2 of each Analyze Layout and Analyze Receipt respectively. 
 
 ### Analyze Layout
 Extracts text and table structure from documents using optical character recognition (OCR). An API POST request is sent to the cognitive service with the layout passed in the request.body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
