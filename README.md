@@ -41,6 +41,6 @@ We need to pass this apim-request-id as id params parameter to the GET method to
 
 #### GET http://104.131.161.205:3001/receipt/:id
 
-Sample GET method Example with json response : **https://104.131.161.205:3001/receipt/9c9a3a11-a719-4a42-8e1d-2e8b1a28fd15**
+Sample GET method Example with json response : **http://104.131.161.205:3001/receipt/9c9a3a11-a719-4a42-8e1d-2e8b1a28fd15**
 
 
