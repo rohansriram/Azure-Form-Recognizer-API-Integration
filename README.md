@@ -8,10 +8,9 @@ The Azure Form Recognizer extracts information from forms and images into struct
 ### Analyze Layout
 Extracts text and table structure from documents using optical character recognition (OCR). An API POST request is sent to the cognitive service with the layout passed in the request.body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
 #### HTTP POST REQUEST SAMPLE FOR LAYOUT
-POST http://104.131.161.205:3001/layout \
 ##### REQUEST.HEADERS
 Content-Type: application/json \
-Ocp-Apim-Subscription-Key: •••••••••••••••••••••••••••••••• \
+Ocp-Apim-Subscription-Key: •••••••••••••••••••••••••••••••• 
 ##### REQUEST.BODY.SOURCE 
 {
    **"source": "https://campustecnologicoalgeciras.es/wp-content/uploads/2017/07/OoPdfFormExample.pdf"**
@@ -29,10 +28,9 @@ Sample GET method Example with json response : **http://104.131.161.205:3001/lay
 ### Analyze Receipt
 Detects and extracts data from receipts using optical character recognition (OCR) and our receipt model, enabling you to easily extract structured data from receipts such as merchant name, merchant phone number, transaction date, transaction total, and more. An API POST request is sent to the cognitive service with the receipt passed in the request.body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
 #### HTTP POST REQUEST SAMPLE FOR RECEIPT
-POST http://104.131.161.205:3001/receipt \
 ##### REQUEST HEADERS
 Content-Type: application/json \
-Ocp-Apim-Subscription-Key: •••••••••••••••••••••••••••••••• \
+Ocp-Apim-Subscription-Key: •••••••••••••••••••••••••••••••• 
 ##### REQUEST BODY
 {
   **"source": "https://www.howtogeek.com/wp-content/uploads/2017/03/img_58b76ccb8d9c3.png"**
