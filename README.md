@@ -2,8 +2,8 @@
 
 API DOCUMENTATION
 The Azure Form Recognizer extracts information from forms and images into structured data. The options implemented are: 
-•	Analyze Layout
-•	Analyze Receipt
+*•	Analyze Layout
+*•	Analyze Receipt
 
 Analyze Layout
 Extracts text and table structure from documents using optical character recognition (OCR). An API POST request is sent to the cognitive service with the layout passed in the request. Body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
