@@ -22,7 +22,7 @@ Sample response is shown below: \
 We need to pass this apim-request-id as id params parameter to the GET method to receive the json form of the document.
 #### GET http://104.131.161.205:3001/layout/:id
 
-Sample GET method Example with json response : **https://104.131.161.205:3001/layout/4dcedb9a-3017-41a0-910a-07d8bfe15317**
+Sample GET method Example with json response : **http://104.131.161.205:3001/layout/4dcedb9a-3017-41a0-910a-07d8bfe15317**
 ### Analyze Receipt
 Detects and extracts data from receipts using optical character recognition (OCR) and our receipt model, enabling you to easily extract structured data from receipts such as merchant name, merchant phone number, transaction date, transaction total, and more. An API POST request is sent to the cognitive service with the receipt passed in the request. Body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
 #### HTTP POST REQUEST SAMPLE FOR RECEIPT
