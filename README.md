@@ -14,15 +14,16 @@ Ocp-Apim-Subscription-Key: •••••••••••••••••�
 {
    "source": "https://campustecnologicoalgeciras.es/wp-content/uploads/2017/07/OoPdfFormExample.pdf"
 } \
-#### POST https://104.131.161.205:3001/layout
-This end point requires the user to pass a req.body.source of raw of type JSON in postman URL similar to the above example shown in red. 
-A status 200 OK response message is returned with several headers out of which we need the field apim-request-id. Sample response is shown below:
-apim-request-id: 4dcedb9a-3017-41a0-910a-07d8bfe15317
-We need to pass this apim-request-id as id params parameter to the GET method to receive the json form of the document.
-GET https://104.131.161.205:3001/layout/:id
+#### POST https://104.131.161.205:3001/layout 
+This end point requires the user to pass a req.body.source of raw of type JSON in postman URL similar to the above example shown in red. \
+A status 200 OK response message is returned with several headers out of which we need the field apim-request-id. \
+Sample response is shown below: \
+**apim-request-id: 4dcedb9a-3017-41a0-910a-07d8bfe15317** \
+We need to pass this apim-request-id as id params parameter to the GET method to receive the json form of the document.\
+#### GET https://104.131.161.205:3001/layout/:id
 
-Sample GET method with json response : https://104.131.161.205:3001/layout/4dcedb9a-3017-41a0-910a-07d8bfe15317
-Analyze Receipt
+Sample GET method with json response : **https://104.131.161.205:3001/layout/4dcedb9a-3017-41a0-910a-07d8bfe15317**
+### Analyze Receipt
 Detects and extracts data from receipts using optical character recognition (OCR) and our receipt model, enabling you to easily extract structured data from receipts such as merchant name, merchant phone number, transaction date, transaction total, and more. An API POST request is sent to the cognitive service with the receipt passed in the request. Body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
 HTTP POST REQUEST SAMPLE
 POST https://104.131.161.205:3001/layout
