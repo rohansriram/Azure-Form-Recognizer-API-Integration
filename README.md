@@ -35,8 +35,8 @@ Ocp-Apim-Subscription-Key: •••••••••••••••••�
 #### POST https://104.131.161.205:3001/receipt
 This end point requires the user to pass a **req.body.source**of raw of type **JSON** in postman URL similar to the above example shown in bold. \
 A status 200 OK response message is returned with several headers out of which we need the field apim-request-id. \
-Sample response is shown below:\
-**apim-request-id: 9c9a3a11-a719-4a42-8e1d-2e8b1a28fd15**
+Sample response is shown below: \
+**apim-request-id: 9c9a3a11-a719-4a42-8e1d-2e8b1a28fd15** \
 We need to pass this apim-request-id as id params parameter to the GET method to receive the json form of the document. \
 
 #### GET https://104.131.161.205:3001/receipt/:id
