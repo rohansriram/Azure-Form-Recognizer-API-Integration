@@ -1,6 +1,6 @@
 # Azure-Form-Recognizer-API-Integration
 
-##API DOCUMENTATION
+## API DOCUMENTATION
 The Azure Form Recognizer extracts information from forms and images into structured data. The options implemented are: 
 *	Analyze Layout
 *	Analyze Receipt
