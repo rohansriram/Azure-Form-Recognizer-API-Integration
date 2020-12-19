@@ -5,17 +5,17 @@ The Azure Form Recognizer extracts information from forms and images into struct
 *	Analyze Layout
 *	Analyze Receipt
 
-Analyze Layout
+### Analyze Layout
 Extracts text and table structure from documents using optical character recognition (OCR). An API POST request is sent to the cognitive service with the layout passed in the request. Body as a URL of type .json, .pdf, .jpg, .png  which returns a json of the requested document. 
-HTTP POST REQUEST SAMPLE
-POST https://104.131.161.205:3001/layout
-Host: recogform1.cognitiveservices.azure.com
-Path: /formrecognizer/v2.0/layout/analyze
-Content-Type: application/json
-Ocp-Apim-Subscription-Key: ••••••••••••••••••••••••••••••••
-{
-  "source": "https://campustecnologicoalgeciras.es/wp-content/uploads/2017/07/OoPdfFormExample.pdf"
-}
+#### HTTP POST REQUEST SAMPLE
+* POST https://104.131.161.205:3001/layout
+* Host: recogform1.cognitiveservices.azure.com
+* Path: /formrecognizer/v2.0/layout/analyze
+* Content-Type: application/json
+* Ocp-Apim-Subscription-Key: ••••••••••••••••••••••••••••••••
+* {
+*   "source": "https://campustecnologicoalgeciras.es/wp-content/uploads/2017/07/OoPdfFormExample.pdf"
+* }
 POST https://104.131.161.205:3001/layout
 This end point requires the user to pass a req.body.source of raw of type JSON in postman URL similar to the above example shown in red. 
 A status 200 OK response message is returned with several headers out of which we need the field apim-request-id. Sample response is shown below:
