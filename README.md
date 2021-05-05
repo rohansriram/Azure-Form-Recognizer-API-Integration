@@ -20,7 +20,7 @@ Ocp-Apim-Subscription-Key: •••••••••••••••••�
 #### POST http://104.131.161.205:3001/layout 
 This end point requires the user to pass a **req.body.source** of raw of type **JSON** in postman as a URL similar to the above example shown in bold. \
 The **request.headers** are passed in the application parameters and is optional. \
-A status 200 OK response message is returned with several response.headers out of which we need the response field -> apim-request-id. \
+A status 200 OK response message is returned with several response.headers out of which were need the response field -> apim-request-id. \
 Sample response is shown below: \
 **apim-request-id: 4dcedb9a-3017-41a0-910a-07d8bfe15317** \
 This apim-request-id is passed as params request parameter to the GET method to receive the response.json form of the document.
